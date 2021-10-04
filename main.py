@@ -57,7 +57,7 @@ def single_game(cur_player):
     values = [' ' for x in range(9)]
 
 
-    player_pos = {'X': [], 'O': []}
+    player_pos = {'x': [], 'o': []}
 
 
     while True:
@@ -89,7 +89,7 @@ def single_game(cur_player):
 
         if check_win(player_pos, cur_player):
             print_tic_tac_toe(values)
-            print("Player ", cur_player, " has won the game!!")
+            print("Player ", cur_player, " has won the game with an amazing lead!!")
             print("\n")
             return cur_player
 
