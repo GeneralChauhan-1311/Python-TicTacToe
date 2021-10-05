@@ -89,14 +89,14 @@ def single_game(curr_player):
 
         if check_win(player_pos, curr_player):
             print_tic_tac_toe(values)
-            print("Player ", cur_player, " has won the game with an amazing lead!!")
+            print("Gamer ", cur_player, " has won the game with an amazing lead!!")
             print("\n")
             return curr_player
 
 
         if check_draw(player_pos):
             print_tic_tac_toe(values)
-            print("Game Drawn")
+            print("Its a tie")
             print("\n")
             return 'D'
 
