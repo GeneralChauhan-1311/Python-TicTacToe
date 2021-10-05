@@ -32,10 +32,10 @@ def print_scoreboard(score_board):
 
 def check_win(player_position, cur_player):
 
-    soln = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [1, 4, 7], [2, 5, 8], [3, 6, 9], [1, 5, 9], [3, 5, 7]]
+    solution = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [1, 4, 7], [2, 5, 8], [3, 6, 9], [1, 5, 9], [3, 5, 7]]
 
     # Loop to check if any winning combination is satisfied
-    for x in soln:
+    for x in solution:
         if all(y in player_position[cur_player] for y in x):
 
             return True
@@ -52,7 +52,7 @@ def check_draw(player_position):
 
 
 
-def single_game(cur_player):
+def single_game(curr_player):
 
     values = [' ' for x in range(9)]
 
@@ -65,7 +65,7 @@ def single_game(cur_player):
 
 
         try:
-            print("Player ", cur_player, " turn. Which box? : ", end="")
+            print("Player ", curr_player, " turn. Which box? : ", end="")
             move = int(input())
         except ValueError:
             print("Wrong Input!!! Try Again")
@@ -81,17 +81,17 @@ def single_game(cur_player):
             continue
 
 
-        values[move - 1] = cur_player
+        values[move - 1] = curr_player
 
 
-        player_pos[cur_player].append(move)
+        player_pos[curr_player].append(move)
 
 
-        if check_win(player_pos, cur_player):
+        if check_win(player_pos, curr_player):
             print_tic_tac_toe(values)
             print("Player ", cur_player, " has won the game with an amazing lead!!")
             print("\n")
-            return cur_player
+            return curr_player
 
 
         if check_draw(player_pos):
@@ -101,10 +101,10 @@ def single_game(cur_player):
             return 'D'
 
 
-        if cur_player == 'X':
-            cur_player = 'O'
+        if curr_player == 'X':
+            curr_player = 'O'
         else:
-            cur_player = 'X'
+            curr_player = 'X'
 
 
 if __name__ == "__main__":
