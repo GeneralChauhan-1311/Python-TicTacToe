@@ -92,13 +92,13 @@ def main():
     print('Welcome to Tic Tac Toe Game!')
     print('you can use the guide to play the game')
     print('Press keys according to the position on which you want to play')
-    print('**************************************************************')
+    print('*****************************************************************')
     print(' 1 | 2 | 3 |')
     print('------------')
     print(' 4 | 5 | 6 |')
     print('------------')
     print(' 7 | 8 | 9 |')
-    print('**************************************************************')
+    print('*****************************************************************')
 
     printBoard(board)
 
