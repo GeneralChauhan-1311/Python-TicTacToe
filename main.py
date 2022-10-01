@@ -31,10 +31,13 @@ def print_scoreboard(score_board):
 
 
 def check_win(player_position, cur_player):
+    oln = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [1, 4, 7], [2, 5, 8], [3, 6, 9], [1, 5, 9], [3, 5, 7]]
+    ln = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [1, 4, 7], [2, 5, 8], [3, 6, 9], [1, 5, 9], [3, 5, 7]]
 
     soln = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [1, 4, 7], [2, 5, 8], [3, 6, 9], [1, 5, 9], [3, 5, 7]]
 
     # Loop to check if any winning combination is satisfied
+    #Loop to check for winning
     for x in soln:
         if all(y in player_position[cur_player] for y in x):
 
@@ -163,6 +166,9 @@ if __name__ == "__main__":
 
         elif choice == 3:
             print("Final Scores")
+                        print("Final Scores")
+                            print("Final Scores")
+                                print("Final Scores")
             print_scoreboard(score_board)
             break
 
