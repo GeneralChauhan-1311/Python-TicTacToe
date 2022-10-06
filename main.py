@@ -39,7 +39,7 @@ def check_win(player_position, cur_player):
     # Loop to check if any winning combination is satisfied
 
     #Loop to check for winning
-    for x in soln:
+    for x in oln:
 
         if all(y in player_position[cur_player] for y in x):
 
@@ -73,12 +73,12 @@ def single_game(curr_player):
             print("Player ", curr_player, " turn. Which box? : ", end="")
             move = int(input())
         except ValueError:
-            print("Wrong Input!!! Try Again")
+            print("Invalid Input!!! Try Again")
             continue
 
 
         if move < 1 or move > 9:
-            print("Wrong Input!!! Try Again")
+            print("Invalid Input!!! Try Again")
             continue
 
         if values[move - 1] != ' ':
@@ -115,11 +115,11 @@ def single_game(curr_player):
 if __name__ == "__main__":
 
     print("Player 1")
-    player1 = input("Enter Player1 name : ")
+    player1 = input("Enter Player 1 name : ")
     print("\n")
 
     print("Player 2")
-    player2 = input("Enter Player2 name : ")
+    player2 = input("Enter Player 2 name : ")
     print("\n")
 
 
@@ -148,7 +148,7 @@ if __name__ == "__main__":
         try:
             choice = int(input())
         except ValueError:
-            print("Wrong Input!!! Try Again\n")
+            print("Invalid Input!!! Try Again\n")
             continue
 
 
