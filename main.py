@@ -1,5 +1,16 @@
 
-def print_tic_tac_toe(values):
+def print_scoreboard(score_board):
+    print("\t--------------------------------")
+    print("\t              SCOREBOARD       ")
+    print("\t--------------------------------")
+
+    players = list(score_board.keys())
+    print("\t   ", players[0], "\t    ", score_board[players[0]])
+    print("\t   ", players[1], "\t    ", score_board[players[1]])
+
+    print("\t--------------------------------\n")
+    
+ def print_tic_tac_toe(values):
     print("\n")
     print("\t     |     |")
     print("\t  {}  |  {}  |  {}".format(values[0], values[1], values[2]))
@@ -15,18 +26,6 @@ def print_tic_tac_toe(values):
     print("\t     |     |")
     print("\n")
 
-
-# hi
-def print_scoreboard(score_board):
-    print("\t--------------------------------")
-    print("\t              SCOREBOARD       ")
-    print("\t--------------------------------")
-
-    players = list(score_board.keys())
-    print("\t   ", players[0], "\t    ", score_board[players[0]])
-    print("\t   ", players[1], "\t    ", score_board[players[1]])
-
-    print("\t--------------------------------\n")
 
 
 
